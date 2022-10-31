@@ -4,7 +4,7 @@ $(function(){
     var layer=layui.layer
 
     // 实现退出功能
-    $('#btnLogout').on('cklick',function(){
+    $('#btnLogout').on('click',function(){
         layer.confirm('确定退出登录？',{icon:3,title:'请确认'},function(index){
             // 与登录功能相反
             // 清除本地存储
