@@ -4,12 +4,14 @@ $(function(){
     // cropper插件语句
     var $image=$('#image')
 
-    const option={
+    const options={
         // 纵横比
         aspectRatio:1,
         // 指定预览区域
         preview:'.img-preview'
     }
+
+    $image.cropper(options)
 // 为上传按钮绑定点击事件
     $('#btnChooseImage').on('click',function(){
         $('#file').click()
